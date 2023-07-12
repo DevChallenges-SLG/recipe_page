@@ -78,7 +78,6 @@ html {
   justify-content: space-between;
 }
 .description-container .ingredient-and-instructions {
-  /* width: 750px; */
   width: 579px;
 }
 .description-container .informations-container {
@@ -140,19 +139,36 @@ html {
   font-weight: 400;
   line-height: normal;
   margin-top: 32px;
-  margin-bottom: 36px;
+  margin-bottom: 30px;
 }
 .ingredients-conatiner ul {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 12px;
 }
 
 .ingredients-conatiner ul li {
   display: flex;
   gap: 17px;
 }
+#graham li:nth-child(1) {
+  margin-bottom: 3px;
+}
+#graham li:nth-child(2) {
+  margin-bottom: 14px;
+}
+
+.cheescake-list li:nth-child(1),
+.cheescake-list li:nth-child(4),
+.cheescake-list li:nth-child(5),
+.cheescake-list li:nth-child(6) {
+  margin-bottom: 12px;
+}
+.cheescake-list li:nth-child(2),
+.cheescake-list li:nth-child(3) {
+  margin-bottom: 13px;
+}
+
 .ingredients-conatiner ul li label {
   color: var(--gray-1, #333);
   font-family: 'Montserrat', sans-serif;
