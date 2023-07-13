@@ -176,6 +176,15 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
+  width: 541px;
+}
+.ingredients-conatiner ul li label span {
+  color: var(--gray-1, #333);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 25px;
 }
 .ingredients-conatiner ul li input {
   width: 21px;
@@ -276,4 +285,114 @@ footer p {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+@media screen and (max-width: 450px) {
+  body {
+    width: 375px;
+    padding-left: 11px;
+    margin: 0 auto;
+  }
+  .container {
+    width: 364px;
+    margin: 0 auto;
+    flex-shrink: 0;
+  }
+  .container h1 {
+    font-size: 24px;
+    padding-top: 32px;
+    padding-left: 0px;
+  }
+  .subtitulo h2 {
+    width: 320px;
+    height: 88px;
+    flex-shrink: 0;
+    font-size: 12px;
+  }
+  .container picture {
+    margin-top: 0px;
+    padding-top: 12px;
+    width: 352px;
+    height: 214px;
+  }
+  .container picture img {
+    width: 352px;
+    height: 202px;
+  }
+  .description-container {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 0;
+    width: 357px;
+    margin-top: 24px;
+  }
+  .description-container .ingredient-and-instructions {
+    width: 357px;
+  }
+  .description-container .informations-container {
+    width: 357px;
+    height: 103px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-shadow: none;
+    gap: 10px;
+  }
+
+  .information-item {
+    display: flex;
+    gap: 4px;
+  }
+
+  .information-item img {
+    width: 17px;
+  }
+
+  .information-item div {
+    width: 90px;
+  }
+  .information-item h5 {
+    font-size: 8px;
+  }
+  .information-item p {
+    font-size: 10px;
+  }
+
+  .description-container .informations-container .information-item:first-child {
+    justify-content: flex-start;
+    align-self: flex-start;
+    flex-basis: 90%;
+  }
+  .ingredients-conatiner {
+    padding-left: 2px;
+  }
+  .ingredients-conatiner h3 {
+    font-size: 18px;
+  }
+
+  .ingredients-conatiner h4 {
+    font-size: 16px;
+    margin-top: 13px;
+    margin-bottom: 23px;
+  }
+  .ingredients-conatiner ul {
+    margin-bottom: 29px;
+  }
+  .ingredients-conatiner ul li {
+    gap: 8px;
+  }
+  .ingredients-conatiner ul li label {
+    font-size: 14px;
+    width: 313px;
+  }
+  .ingredients-conatiner ul li label span {
+    font-size: 14px;
+  }
+  .instructions h3 {
+    margin: 28px 0;
+  }
+  .instructions ol li p {
+    width: 300px;
+    word-break: keep-all;
+  }
 }
